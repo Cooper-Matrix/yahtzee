@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yahtzee Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎲 Yahtzee Game 🎲</h1>
+    <p>Roll the dice, score points, and aim for Yahtzee!</p>
+  </header>
+  
+  <main>
+    <section id="game">
+      <div id="dice-container">
+        <!-- Dice buttons -->
+        <button class="dice" id="die1">🎲</button>
+        <button class="dice" id="die2">🎲</button>
+        <button class="dice" id="die3">🎲</button>
+        <button class="dice" id="die4">🎲</button>
+        <button class="dice" id="die5">🎲</button>
+      </div>
+      <button id="roll-btn">Roll Dice</button>
+      <p>Rolls left: <span id="rolls-left">3</span></p>
+    </section>
+
+    <section id="player-info">
+      <h2>Current Player: <span id="current-player">Player 1</span></h2>
+    </section>
+
+    <section id="score-section">
+      <h2>Scoreboard</h2>
+      <table id="scoreboard">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will populate here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="ajax-section">
+      <button id="save-game-btn">Save Game</button>
+      <button id="load-game-btn">Load Game</button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Yahtzee Game by [Your Name]</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
